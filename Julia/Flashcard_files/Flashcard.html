@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Flashcard_files/stily.css">
+    <title>Flashcard</title>
+</head>
+<body>
+    <main>  
+<section id="container">
+        <article class="cartao"> 
+            <div class="cartao__conteudo">
+                <h3>Historia</h3>
+                <div class="cartao__conteudo__pergunta">
+                   <p></p>Quem descobriu o Brasil?<p></p>
+                </div>
+                <div class="cartao__conteudo__resposta">
+                   <p>Pedro Àlvares Cabral</p>
+                </div>
+        </div>
+    </article> 
+    <article class="cartao"> 
+        <div class="cartao__conteudo">
+            <h3>Inglês</h3>
+            <div class="cartao__conteudo__pergunta">
+               <p></p>Como se diz oi em inglês?<p></p>
+            </div>
+            <div class="cartao__conteudo__resposta">
+               <p>Se diz HI (RAI)</p>
+            </div>
+    </div>
+</article> 
+<article class="cartao"> 
+    <div class="cartao__conteudo">
+        <h3>Português</h3>
+        <div class="cartao__conteudo__pergunta">
+           <p></p>O que é uma vogal?<p></p>
+        </div>
+        <div class="cartao__conteudo__resposta">
+           <p>É uma letra do alfabeto</p>
+        </div>
+</div>
+</article> 
+<article class="cartao"> 
+    <div class="cartao__conteudo">
+        <h3>Programação</h3>
+        <div class="cartao__conteudo__pergunta">
+           <p></p>O que é Python?<p></p>
+        </div>
+        <div class="cartao__conteudo__resposta">
+           <p>O Python é uma linguagem de Programação</p>
+        </div>
+    </div></article>
+            
+    
+
+    <article class="cartao"> 
+        <div class="cartao__conteudo">
+            <h3>Geografia</h3>
+            <div class="cartao__conteudo__pergunta">
+               <p></p>Qual a capital da França?<p></p>
+            </div>
+            <div class="cartao__conteudo__resposta">
+               <p>A capital da França é Paris</p>
+            </div>
+        </div>
+    </article>
+</section>
+        </main>
+        <footer>
+            <p>Progeto desenvolvido por alura sem fins lucrativos</p>
+            </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
